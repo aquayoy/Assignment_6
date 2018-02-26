@@ -1,3 +1,7 @@
+/** CS1B_Assignment_6;option A 
+ * Creeger, Adam/ Kishore, Nand/ Lo, YaFan
+ */
+
 import java.lang.Exception;
 
 /*show a run that displays some (generic node)s.  
