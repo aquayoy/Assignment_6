@@ -43,21 +43,21 @@ public class Card {
 		this.suit = suit;
 
 		// convert to uppercase to simplify
-		upVal = Character.toUpperCase(value);
-		value = upVal;
+//		upVal = Character.toUpperCase(value);
+//		value = upVal;
 		// check for validity
 		// >use your isValid helper method here
 		if (isValid(value, suit)) {
-			this.value = upVal;
+			this.value = value;
 		} else {
 			errorFlag = true;
 		}
 		// errorFlag = this.isValid(this.value, this.suit);
-		return errorFlag;
+		return !errorFlag;
 	}
 
 	// accessors
-	public char getValue() {
+	public char getVal() {
 		return value;
 	}
 
@@ -74,7 +74,7 @@ public class Card {
 	// >must check errorFlag too & just use accessors to see if values, suits and
 	// errorFlags are the same in both "card" and "this".
 	public boolean equals(Card card) {
-		if (card.getValue() == this.getValue() && card.getSuit() == this.getSuit() && card.isErrorFlag() == this.isErrorFlag()) {
+		if (card.getVal() == this.getVal() && card.getSuit() == this.getSuit() && card.isErrorFlag() == this.isErrorFlag()) {
 			return true;
 		} else
 			return false;

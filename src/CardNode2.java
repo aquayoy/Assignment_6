@@ -1,11 +1,11 @@
 
 //Deriving from Node
-public class CardNode extends Node {
+public class CardNode2 extends Node {
 
 	private Card data;
 
 	// constructor
-	public CardNode(Card card) {
+	public CardNode2(Card card) {
 		super(); // constructor call to base class
 		data = card;
 	}

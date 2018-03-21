@@ -58,7 +58,8 @@ public class Queue {
 			retStr = retStr + current.toString() + "  ";
 			current = current.next;
 		}
-		return "a String of all the items in the Queue from oldest to youngest:\n" + retStr;
+		//a String of all the items in the Queue from oldest to youngest:\n" + retStr
+		return retStr;
 	}
 
 }
@@ -70,6 +71,6 @@ public class Queue {
 class QueueEmptyException extends Exception {
 	public QueueEmptyException() {
 
-		super("the queue is empty");
+		super("*** tried to pop from  empty queue ***");
 	}
 }
